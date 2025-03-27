@@ -8,15 +8,38 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rbpaintingcorp.com/">
+    <meta property="og:title" content="R & B Painting Corp - Professional Painting Services">
+    <meta property="og:description" content="Professional painting services with over 13 years of excellence in residential and commercial painting. Yelp Guaranteed service.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:image:alt" content="R & B Painting Corp Logo">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://rbpaintingcorp.com/">
+    <meta name="twitter:title" content="R & B Painting Corp - Professional Painting Services">
+    <meta name="twitter:description" content="Professional painting services with over 13 years of excellence in residential and commercial painting. Yelp Guaranteed service.">
+    <meta name="twitter:image" content="logo.png">
+    <meta name="twitter:image:alt" content="R & B Painting Corp Logo">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">R & B Painting Corp</div>
+            <a href="#" class="logo">
+                <img src="logo.png" alt="R & B Painting Corp Logo">
+                <span class="logo-text">R & B Painting Corp</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <li><a href="#contact" class="button button-primary">
                     <i class="fas fa-paint-roller"></i>
                     Get Quote
@@ -116,14 +139,18 @@
                 <div class="service-card">
                     <h3>Get in Touch</h3>
                     <p>
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:4075013222">(407) 501-3222</a>
+                        <a href="tel:4075013222" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            (407) 501-3222
+                        </a>
                     </p>
                     <p>
-                        <i class="fas fa-map-marker-alt"></i>
-                        1128 Calee Marie Dr, Campbell, FL 34741
+                        <a href="https://maps.google.com/?q=1128+Calee+Marie+Dr,+Campbell,+FL+34741" target="_blank" class="contact-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            1128 Calee Marie Dr, Campbell, FL 34741
+                        </a>
                     </p>
-                    <p>
+                    <p class="contact-link">
                         <i class="fas fa-clock"></i>
                         Monday - Friday: 9:00 AM - 5:00 PM
                     </p>
@@ -159,21 +186,54 @@
                 <i class="fab fa-yelp"></i>
                 <span>Yelp Guaranteed</span>
             </div>
-            <h2 style="color: white;">Trusted by Hundreds of Satisfied Customers</h2>
-            <p>Professional painting services backed by Yelp's guarantee of quality and reliability</p>
+            <h2 style="color: white;">Fast & Reliable Service</h2>
+            <p>Professional painting services with quick response times and reliable communication</p>
             
             <div class="yelp-stats">
                 <div class="stat-item">
-                    <div class="stat-number">4.8</div>
-                    <div class="stat-label">Average Rating</div>
+                    <div class="stat-number">1 Day</div>
+                    <div class="stat-label">Average Response Time</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">Reviews</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">95%</div>
+                    <div class="stat-number">100%</div>
                     <div class="stat-label">Response Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Recent Work</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="living room.png" alt="Modern Living Room Paint Job">
+                    <div class="caption">
+                        <h3>Interior Excellence</h3>
+                        <p>Professional interior painting with attention to detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="exteriorhouse.png" alt="Exterior House Paint">
+                    <div class="caption">
+                        <h3>Exterior Transformation</h3>
+                        <p>Complete exterior painting solutions</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="commercialoffice.png" alt="Commercial Office Space">
+                    <div class="caption">
+                        <h3>Commercial Projects</h3>
+                        <p>Professional office space solutions</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="detailwork.png" alt="Detailed Paint Work">
+                    <div class="caption">
+                        <h3>Detail Work</h3>
+                        <p>Precision and attention to detail</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -188,13 +248,26 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p><i class="fas fa-phone"></i> (407) 501-3222</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 1128 Calee Marie Dr</p>
-                    <p>Campbell, FL 34741</p>
+                    <p>
+                        <a href="tel:4075013222">
+                            <i class="fas fa-phone"></i>
+                            (407) 501-3222
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://maps.google.com/?q=1128+Calee+Marie+Dr,+Campbell,+FL+34741" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            1128 Calee Marie Dr<br>
+                            Campbell, FL 34741
+                        </a>
+                    </p>
                 </div>
                 <div class="footer-section">
                     <h3>Hours</h3>
-                    <p><i class="fas fa-clock"></i> Monday - Friday</p>
+                    <p>
+                        <i class="fas fa-clock"></i>
+                        Monday - Friday
+                    </p>
                     <p>9:00 AM - 5:00 PM</p>
                 </div>
             </div>
